@@ -50,6 +50,7 @@ You must be logged in with OIDC to see this.
 EOF
 
 sudo cp "$DIR/pg.wsgi" /var/www/api/pg.wsgi
+sudo cp "$DIR/env.wsgi" /var/www/api/env.wsgi
 rsync -aHxv "$DIR/www/" /var/www/www/
 
 if [ ! -f "$DIR/v4.18.2.tar.gz" ]
